@@ -1,0 +1,108 @@
+/* Home.css */
+
+.bg-light {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  /* thoda warm gradient for background */
+}
+
+h1.display-4 {
+  color: #7f1d1d;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lead {
+  color: #4b2e05;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+h2.text-center {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #b45309; /* warm amber */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Cards Styling */
+.card {
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  background: #fff9f0;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Images - fixed height, cover, rounded top */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  filter: brightness(0.95);
+  transition: filter 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  filter: brightness(1);
+}
+
+/* Card Titles */
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #92400e; /* deep amber */
+  margin-bottom: 0.5rem;
+}
+
+/* Card Text */
+.card-text {
+  font-family: 'Open Sans', sans-serif;
+  color: #6b4f1d;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Button styling */
+.btn-danger {
+  background: linear-gradient(135deg, #f43f5e, #be123c);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 40px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 12px rgba(255, 56, 92, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #be123c, #f43f5e);
+  box-shadow: 0 8px 16px rgba(255, 56, 92, 0.7);
+}
+.card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+  }
+  .add-to-cart-btn {
+    padding: 6px 12px;   /* chhota ya bada karne ke liye */
+    font-size: 14px;     /* pehle jitna tha waisa */
+    height: auto;        /* fixed height nahi */
+    min-width: 100px;    /* optional, minimum width */
+  }
+  .hero-about-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    padding-bottom: 4rem; /* space before footer */
+  }

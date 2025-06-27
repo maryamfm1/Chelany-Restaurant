@@ -1,0 +1,60 @@
+.footer {
+  margin-top: -100px; /* 👈 yeh line add karo ya adjust karo */
+  padding-top: 160px; /* box ke neeche se distance maintain karne ke liye */
+  background-color: #111;
+  color: white;
+  padding: 2rem;
+  z-index: 5;
+  position: relative;
+}
+
+
+.top-row {
+  border-bottom: 1px solid #444;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
+}
+
+.contact-item {
+  flex: 1;
+  min-width: 150px;
+}
+
+.bottom-row {
+  padding-top: 1rem;
+  
+}
+
+.newsletter-input {
+  background-color: #fff;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  outline: none;
+  width: 200px;
+   
+}
+
+.newsletter-input::placeholder {
+  color: #ccc;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+}
+
+.opening-hours {
+  color: #ccc;
+  font-style: italic;
+}

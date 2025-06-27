@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ---------------------------------- */
+/* Card images equal size, no cropping */
+/* ---------------------------------- */
+.card-img-top {
+  height: 250px;
+  width: 150%;
+  object-fit: contain;      /* image crop nahi hogi */
+  background-color: #fff;   /* background white rakha */
+  padding: 10px;            /* thoda space image ke aas paas */
+  border-radius: 8px;       /* thoda rounded corners for smooth look */
+}
+
+
+/* Scrollbar horizontal for category navbar */
+nav {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+nav::-webkit-scrollbar {
+  height: 6px;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}

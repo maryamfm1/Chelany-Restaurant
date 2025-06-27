@@ -1,0 +1,50 @@
+.about-section {
+  margin-top: -180px;
+  padding-bottom: -180px; /* ya 0rem try karo */
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  max-width: 800px;
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 20;
+  height: 500px;
+  box-shadow: 4px 4px rgb(182, 182, 182);
+   
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px; /* footer se thoda gap maintain ho */
+}
+
+
+
+.about-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #bb8b3a; /* amber/golden tone for Caribbean vibe */
+  text-align: center;
+}
+
+.separator {
+  width: 80px;
+  height: 3px;
+  background-color: #bb8b3a;
+  margin: 0 auto 1.5rem;
+  border-radius: 5px;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+}

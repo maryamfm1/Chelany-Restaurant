@@ -1,0 +1,78 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section {
+  height: 600px; /* apni image ki height set karo */
+   
+  position: relative;
+  z-index: 1;
+}
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: blur(4px); /* 👈 yeh line add karo, adjust kar sakte ho (1px–4px) */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 10;
+  color: white;
+  max-width: 90%;
+  padding: 0 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 2px 2px 4px #000000;
+  padding-bottom: 5rem;
+   
+} 
+
+.hero-title {
+  font-size: 4.5rem; /* size increased */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  z-index: 8;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.hero-subtitle {
+  font-size: 2.2rem; /* size increased */
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-container {
+    height: 60vh;
+  }
+}
