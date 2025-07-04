@@ -1,0 +1,387 @@
+[
+    {
+      "category": "Suppen",
+      "item": [
+        {"name": "Rote Linsensuppe", "description": "Rote Linsensuppe (Pakistanischer Stil)", "priceEur": "5.9"},
+        {"name": "Dal Shorba", "description": "Linsensuppe mit Gewürzen", "priceEur": "6.7"},
+        {"name": "Gemischte Gemüsesuppe", "description": "Gemischte Gemüsesuppe", "priceEur": "5.9"},
+        {"name": "Sabzi Shorba", "description": "Gemüsesuppe mit regionalen Gewürzen", "priceEur": "5.9"},
+        {"name": "Curry-Suppe mit Hühnerfleisch", "description": "Currysuppe mit Hähnchen", "priceEur": "5.9"},
+        {"name": "Mulligatawney Shorba", "description": "Mulligatawney-Suppe mit Gewürzen", "priceEur": "6.9"},
+        {"name": "Garam Shorba", "description": "Würzige heiße Suppe", "priceEur": "-"},
+        {"name": "Mangocremesuppe", "description": "Mangocremesuppe", "priceEur": "-"}
+      ]
+    },
+    {
+      "category": "Pakoras",
+      "item": [
+        {"name": "Zwiebelringe", "description": "Panierte Zwiebelringe", "priceEur": "5.9"},
+        {"name": "Onion Bhaji", "description": "Frittierte Zwiebelbällchen", "priceEur": "-"},
+        {"name": "Chola Bhature", "description": "Kichererbsen mit Gewürzen und Currysauce, serviert mit Bhature", "priceEur": "6.5"},
+        {"name": "Paneer Pakora", "description": "Panierter Frischkäse", "priceEur": "8.9"},
+        {"name": "Murgh Malai", "description": "Gegrilltes Hähnchenfilet mit Joghurt, Käse, Knoblauch und Gewürzen", "priceEur": "9.5"},
+        {"name": "Tangri Kebab", "description": "Hähnchen mit Frischkäse, Joghurt und Senföl", "priceEur": "8.9"},
+        {"name": "Samosas", "description": "Gefüllte Gemüseteigtaschen mit Rosinen, Mandeln und Erbsen", "priceEur": "7.5"},
+        {"name": "Samosa Chaat", "description": "Mit Kichererbsen, Zwiebeln und verschiedenen Saucen", "priceEur": "6.5"},
+        {"name": "Hähnchen Pakoras", "description": "Panierte Hähnchenfilets", "priceEur": "9.9"},
+        {"name": "Gemischter Pakora-Teller (vegetarisch)", "description": "Auswahl an vegetarischen Pakoras", "priceEur": "8.5"},
+        {"name": "Lahori Kebab", "description": "Gegrilltes Hackfleisch vom Lamm", "priceEur": "11.9"},
+        {"name": "Gemischter Pakora-Teller (Fleisch)", "description": "Gefüllte Teigtaschen: Hähnchen, Garnelen, Lamm, Kebab", "priceEur": "20.5"},
+        {"name": "Lasani Kebab", "description": "Gegrilltes Hähnchen mit Joghurt, Chili und Senföl", "priceEur": "8.9"}
+      ]
+    },
+    {
+      "category": "Salate",
+      "item": [
+        {"name": "Chelany Salat", "description": "Gemischter Salat mit Paprika und Käse", "priceEur": "5.9"},
+        {"name": "Kachumber Salat", "description": "Gemischter Salat", "priceEur": "-"},
+        {"name": "Murgh Salat", "description": "Gegrillter Hähnchenschenkel-Salat mit Früchten", "priceEur": "7.9"}
+      ]
+    },
+    {
+      "category": "Vegetarische Gerichte",
+      "item": [
+        {"name": "Sabzi", "description": "Gemüsecurry mit frischem Gemüse und Frischkäse", "priceEur": "11.9"},
+        {"name": "Sabzi Korma", "description": "Gemüse mit Früchten, Mandeln und Käse in Sahnesauce", "priceEur": "12.9"},
+        {"name": "Pilz Mattar", "description": "Pilze mit Erbsen, Rosinen und Mandeln in Sahnesauce", "priceEur": "13.9"},
+        {"name": "Paneer Jhalfrezi", "description": "Frischkäse mit Blumenkohl, Ingwer, Paprika (scharf)", "priceEur": "13.9"},
+        {"name": "Punjabi Bengan", "description": "Aubergine mit Kartoffeln, Gemüse und Nüssen", "priceEur": "13.9"},
+        {"name": "Palak Paneer", "description": "Frischkäse mit Spinat, Zwiebeln, Tomaten und Gewürzen", "priceEur": "12.9"},
+        {"name": "Paneer Shahi", "description": "Hausgemachter Frischkäse mit Nüssen in Tomatensauce", "priceEur": "13.5"},
+        {"name": "Shahi Kofta", "description": "Kartoffel- und Käseröllchen, Gemüse, Mandeln, Rosinen", "priceEur": "14.5"},
+        {"name": "Bhindi Masala", "description": "Okra mit Tomaten, Zucchini, Paprika, Ingwer und Käse", "priceEur": "13.9"},
+        {"name": "Paneer Chili", "description": "Käse mit Paprika, Zwiebeln, Ingwer in Soja-Chili-Sauce (scharf)", "priceEur": "14.9"},
+        {"name": "Tinda Masala", "description": "Kürbis mit Tomaten, Käse, Zwiebeln", "priceEur": "14.5"},
+        {"name": "Mango Paneer", "description": "Käse mit Mangoscheiben und Mandeln in Curry-Sahnesauce", "priceEur": "13.9"}
+      ]
+    },
+    {
+      "category": "Vegane Gerichte",
+      "item": [
+        {"name": "Chelany Korma", "description": "Gemüse mit Kokosmilch, Mandeln, Rosinen, Spinatsauce", "priceEur": "12.5"},
+        {"name": "Dal Darka", "description": "Linsen gebraten mit Zwiebeln, Ingwer, Tomaten", "priceEur": "11.5"},
+        {"name": "Chelany Biryani", "description": "Basmatireis mit Gemüse, Nüssen, Gewürzen und Käse", "priceEur": "12.9"},
+        {"name": "Dal Palak", "description": "Linsen mit Spinat, Tomaten, Zwiebeln, Ingwer", "priceEur": "13.9"},
+        {"name": "Sabzi", "description": "Wechselndes Gemüsecurry", "priceEur": "10.9"},
+        {"name": "Alu Ghobi Masala", "description": "Blumenkohl und Kartoffeln mit Ingwer, Knoblauch und Tomaten", "priceEur": "12.5"}
+      ]
+    },
+    {
+      "category": "Biryani",
+      "item": [
+        {"name": "Hähnchen Biryani", "description": "Gedämpftes Hähnchenfilet mit gebratenem Reis, Nüssen und Rosinen", "priceEur": "14.9"},
+        {"name": "Tofu Mattar", "description": "Tofu-Erbsen-Curry mit verschiedenen Gewürzen", "priceEur": "12.5"},
+        {"name": "Lamm Biryani", "description": "Lamm mit Reis, Gewürzen, Rosinen, Nüssen", "priceEur": "15.9"},
+        {"name": "Gemischtes Biryani", "description": "Reis mit Hähnchen, Lamm, Käse, Rosinen, Nüssen", "priceEur": "16.9"},
+        {"name": "Chelany Biryani", "description": "Gebratener Basmatireis mit Gemüse, Gewürzen, Nüssen, Käse", "priceEur": "12.9"}
+      ]
+    },
+    {
+      "category": "Tandoori – Grillspezialitäten",
+      "item": [
+        {"name": "Hähnchen Malai Tikka", "description": "Hähnchenfilet mariniert mit Cashewpaste, im Lehmofen gebacken", "priceEur": "16.9"},
+        {"name": "Gemischter Tandoori-Teller", "description": "Auswahl an Tandoori-Spezialitäten", "priceEur": "14.9"},
+        {"name": "Tandoori Hähnchen", "description": "Hähnchenschenkel 24h in Joghurt und Gewürzen mariniert, im Ofen gebacken", "priceEur": "16.9"},
+        {"name": "Fisch Tikka", "description": "Gegrillter Rotbarsch mit Paprika, Zwiebeln, Tomaten, Ingwer", "priceEur": "18.9"},
+        {"name": "Hähnchen Tikka Masala", "description": "Gegrilltes Hähnchen mit Zwiebeln, Paprika und Gewürzen", "priceEur": "17.9"},
+        {"name": "Achari Murgh Tikka", "description": "Hähnchenfilet mit Achari-Gewürzmischung und Joghurt", "priceEur": "16.9"},
+        {"name": "Batakh Tikka", "description": "Gegrillte Entenbrust mit Ingwer, Paprika und Gewürzen", "priceEur": "16.5"},
+        {"name": "Paneer Tikka", "description": "Gegrillter marinierter Frischkäse mit Zwiebeln, Paprika", "priceEur": "17.9"},
+        {"name": "Scampi Tikka", "description": "Gegrillte Königsgarnelen mit Paprika, Tomaten, Zwiebeln, Ingwer", "priceEur": "17.9"},
+        {"name": "Lamm Tikka", "description": "Gegrilltes Lamm mit Ingwer, Paprika, Zwiebeln, Joghurt, Gewürzen", "priceEur": "19.9"},
+        {"name": "Sheekh Kebab Tikka", "description": "Gegrilltes Hackfleisch vom Lamm mit Ingwer, Zwiebeln, Paprika", "priceEur": "17.9"}
+      ]
+    },
+    {
+      "category": "Hähnchengerichte",
+      "item": [
+        {"name": "Hähnchen Curry", "description": "Hähnchen in pakistanischer Currysauce", "priceEur": "13.9"},
+        {"name": "Butter Hähnchen", "description": "Gegrilltes Hähnchen in Butter mit Mandeln, Cashews, Tomatensauce", "priceEur": "13.9"},
+        {"name": "Hähnchen Mango", "description": "Hähnchen mit Mango, Mandeln in Curry-Sahnesauce", "priceEur": "13.9"},
+        {"name": "Hähnchen Vindaloo", "description": "Scharfes Hähnchen mit Kokosmilch und gebackenen Kartoffeln", "priceEur": "14.9"},
+        {"name": "Hähnchen Saag", "description": "Hähnchen in Spinat mit Ingwer und Knoblauch", "priceEur": "14.9"},
+        {"name": "Hähnchen Brokkoli", "description": "Hähnchen mit Brokkoli und Mandeln in Curry-Sahnesauce", "priceEur": "14.5"},
+        {"name": "Hähnchen Dahiwala", "description": "Hähnchen mariniert in Ingwer-Knoblauchpaste, Gewürzen, Mandeln in Joghurtsauce", "priceEur": "13.9"},
+        {"name": "Hähnchen Sabzi", "description": "Hähnchen in Currysauce mit gemischtem Gemüse", "priceEur": "13.9"},
+        {"name": "Hähnchen Chili", "description": "Hähnchen mit Paprika, Zwiebeln, Ingwer, Knoblauch in Soja-Chili-Sauce (scharf)", "priceEur": "14.5"},
+        {"name": "Hähnchen Jhalfrezi", "description": "Scharfes Hähnchen mit Gemüse, Ingwer, Knoblauch, Paprika", "priceEur": "14.9"},
+        {"name": "Hähnchen Korma", "description": "Hähnchen in milder Sahnesauce mit Käse, Mandeln, Nüssen", "priceEur": "15.9"},
+        {"name": "Hähnchen Tinda", "description": "Hähnchen mit Kürbis, Paprika, Zucchini, Ingwer, Salat und Reis", "priceEur": "14.9"},
+        {"name": "Bindi Hähnchen", "description": "Okra mit Hähnchen und Paprika", "priceEur": "14.9"},
+        {"name": "Hähnchen Achar", "description": "Hähnchen mit Tomaten, Zwiebeln, scharfen Gewürzen und eingelegtem Gemüse", "priceEur": "14.9"},
+        {"name": "Grünes Hähnchen", "description": "Hähnchen in cremiger Minzsauce mit Mandeln, Cashews, Pistazien, Knoblauch", "priceEur": "14.9"}
+      ]
+    },
+    {
+      "category": "Thalis (Kombinierte Platten)",
+      "item": [
+        {"name": "Chelany Thali", "description": "Palak Paneer, Dal Makhani, Shahi Kofta mit Gewürzen", "priceEur": "1P: 17.90 / 2P: 32.90"},
+        {"name": "Lahori Thali", "description": "Shahi Kofta, Murgh Makhani, Lamm Vindaloo (mittel scharf)", "priceEur": "1P: 18.90 / 2P: 34.90"},
+        {"name": "Punjabi Thali", "description": "Lamm Curry, Hähnchen Vindaloo, Paneer Jhalfrezi (scharf)", "priceEur": "1P: 18.90 / 2P: 34.90"},
+        {"name": "Vegane Thali", "description": "Dal Darka, Sabzi, Bhindi Masala", "priceEur": "1P: 17.90 / 2P: 32.90"}
+      ]
+    },
+    {
+      "category": "Lammgerichte",
+      "item": [
+        {"name": "Lamm Achari", "description": "Lammfilet mit Tomaten, Paprika, Zwiebeln, scharfen Gewürzen und eingelegtem Gemüse", "priceEur": "15.9"},
+        {"name": "Lamm Vindaloo", "description": "Lamm in scharfer Currysauce mit Zwiebeln, Knoblauch, grüner Paprika", "priceEur": "14.9"},
+        {"name": "Lamm Sabzi", "description": "Lamm mit gemischtem Gemüse und regionalen Gewürzen", "priceEur": "15.9"},
+        {"name": "Roghan Josh", "description": "Lamm in scharfer Sauce mit Zwiebeln, Knoblauch, grüner Paprika", "priceEur": "15.9"},
+        {"name": "Lamm Dahiwala", "description": "Lamm mit Gewürzen, Mandeln in Joghurtsauce", "priceEur": "16.5"},
+        {"name": "Lamm Curry", "description": "Lamm in Currysauce, pakistanischer Stil", "priceEur": "14.5"},
+        {"name": "Lamm Tinda", "description": "Gegrilltes Lamm mit Kürbis, Joghurtsauce, Paprika, Zucchini, Ingwer", "priceEur": "14.9"},
+        {"name": "Lamm Saagwala", "description": "Lamm in Spinat mit Ingwer und Knoblauch (Pakistanischer Stil)", "priceEur": "16.9"},
+        {"name": "Keema Kofta", "description": "Hackfleischröllchen vom Lamm, Gemüse, Mandeln, Rosinen, Nüsse in Sahnesauce", "priceEur": "16.9"},
+        {"name": "Lamm Korma", "description": "Lamm in milder Sauce mit Käse, Sahne, Mandeln, Nüssen", "priceEur": "15.5"}
+      ]
+    },
+    {
+      "category": "Fischgerichte",
+      "item": [
+        {"name": "Maschli Curry", "description": "Rotbarschfilet in Currysauce (Pakistanischer Stil)", "priceEur": "14.5"},
+        {"name": "Scampi Masala", "description": "Königsgarnelen mit Ingwer, Knoblauch, regionalen Gewürzen", "priceEur": "18.9"},
+        {"name": "Maschli Masala", "description": "Scharfes Rotbarschfilet mit Gemüse (regionaler Stil)", "priceEur": "15.9"},
+        {"name": "Jhinga Dahiwala", "description": "Königsgarnelen in Ingwer-Knoblauchpaste, Mandeln, Joghurtsauce", "priceEur": "17.9"}
+      ]
+    },
+    {
+      "category": "Entengerichte",
+      "item": [
+        {"name": "Enten Curry", "description": "Entenbrust in Currysauce mit regionalen Gewürzen", "priceEur": "13.9"},
+        {"name": "Enten Korma", "description": "Ente in milder Sauce mit Käse, Sahne, Mandeln, Nüssen", "priceEur": "15.9"},
+        {"name": "Enten Sabzi", "description": "Ente mit Gemüse und regionalen Gewürzen", "priceEur": "15.5"},
+        {"name": "Enten Vindaloo", "description": "Ente in scharfer Currysauce mit Kartoffeln und Zwiebeln", "priceEur": "15.9"},
+        {"name": "Enten Chili", "description": "Ente mit Paprika, Zwiebeln, Ingwer, Knoblauch in Soja-Chili-Sauce", "priceEur": "15.9"}
+      ]
+    },
+    {
+      "category": "Plattes-Platten",
+      "item": [
+        {"name": "Chelany-Platte", "description": "Chai, Linsensuppe, Sabzi Masala, Punjabi Bengan, Paneer Jhalfrezi, Dessert", "priceEur": "2P: 48.00 / 4P: 84.00"},
+        {"name": "Shahi-Platte", "description": "Mango Lassi, Zwiebelringe, Lamm Korma, Butter Hähnchen, Sabzi Curry, Dessert", "priceEur": "2P: 49.00 / 4P: 85.00"},
+        {"name": "Lahori-Platte", "description": "Mango Lassi, gemischter Vorspeisenteller, Hähnchen Chili, Lamm Korma, gemischter Grill, Dessert", "priceEur": "2P: 49.00 / 4P: 85.00"}
+      ]
+    },
+    {
+      "category": "Beilagen",
+      "item": [
+        {"name": "Bhature", "description": "Frittiertes Fladenbrot", "priceEur": "3.2"},
+        {"name": "Keema Naan", "description": "Weizenfladenbrot mit Lammhackfleisch", "priceEur": "5.5"},
+        {"name": "Tandoori Naan", "description": "Weizenfladenbrot", "priceEur": "3.2"},
+        {"name": "Raita", "description": "Gewürzter Joghurt", "priceEur": "3.2"},
+        {"name": "Butter Naan", "description": "Fladenbrot mit Butter", "priceEur": "3.5"},
+        {"name": "Tandoori Roti", "description": "Vollkornbrot", "priceEur": "4.5"},
+        {"name": "Laccha Paratha", "description": "Leicht gebuttertes Vollkornbrot", "priceEur": "4.9"},
+        {"name": "Käse Naan", "description": "Fladenbrot mit geriebenem Frischkäse", "priceEur": "4.5"},
+        {"name": "Peshwari Naan", "description": "Fladenbrot mit Käse, Mandeln, Rosinen", "priceEur": "4.9"},
+        {"name": "Knoblauch Naan", "description": "Fladenbrot mit Knoblauch", "priceEur": "5.9"},
+        {"name": "Bullet Naan", "description": "Fladenbrot mit Knoblauch, Zwiebeln, grüner Chili (sehr scharf)", "priceEur": "4.2"},
+        {"name": "Chapati Korb", "description": "Auswahl an Chapati, Knoblauch Naan, Laccha Paratha, Kalonji", "priceEur": "13.9"},
+        {"name": "Alu Paratha", "description": "Kartoffelbrot mit Koriander, Zwiebeln, grüner Chili", "priceEur": "4.9"},
+        {"name": "Gemischte Pickles", "description": "Eingelegtes Obst", "priceEur": "3.5"},
+        {"name": "Mango Chutney", "description": "Mango mit Gewürzen und Zucker", "priceEur": "3.5"},
+        {"name": "Pommes Frites", "description": "Portion Pommes Frites", "priceEur": "5.5"},
+        {"name": "Basmatireis", "description": "Pakistanischer Basmatireis", "priceEur": "3.2"}
+      ]
+    },
+    {
+      "category": "Mittagsspezialitäten",
+      "item": [
+        {"name": "Malai Kofta", "description": "Kartoffel-Käseröllchen, Gemüse, Nüsse in Käse-Sahnesauce", "priceEur": "9.9"},
+        {"name": "Hähnchen Sabzi", "description": "Hähnchenfilet mit gemischtem Gemüse in Sahnesauce", "priceEur": "10.5"},
+        {"name": "Palak Aloo", "description": "Kartoffeln und Spinat mit Ingwer", "priceEur": "9.9"},
+        {"name": "Dal Makhani", "description": "Linsen in Butter gebraten mit Zwiebeln, Ingwer, Tomaten", "priceEur": "8.9"},
+        {"name": "Alu Ghobi Masala", "description": "Blumenkohl und Kartoffeln mit Ingwer, Knoblauch, Tomaten", "priceEur": "9.9"},
+        {"name": "Mattar Paneer", "description": "Spinat mit hausgemachtem Frischkäse", "priceEur": "9.9"},
+        {"name": "Channa Masala", "description": "Kichererbsen mit regionalen Gewürzen und Currysauce", "priceEur": "9.5"},
+        {"name": "Bhindi Masala", "description": "Okra mit gerösteten Tomaten, Zucchini, Paprika, Ingwer, Käse", "priceEur": "9.9"},
+        {"name": "Paneer Jhalfrezi", "description": "Scharfer Käse mit Blumenkohl, Ingwer, Knoblauch, Paprika", "priceEur": "9.9"},
+        {"name": "Hähnchen Curry", "description": "Hähnchencurry (Pakistanischer Stil)", "priceEur": "10.5"},
+        {"name": "Tinda Masala", "description": "Kürbis mit Tomaten, Käse, Zwiebeln", "priceEur": "10.5"},
+        {"name": "Khumbi Paneer Masala", "description": "Pilze, Käse, Erbsen, Rosinen, Mandeln, Cashews in Sahnesauce", "priceEur": "9.5"},
+        {"name": "Hähnchen Himalaya", "description": "Gebratenes Hähnchen, Paprika, Frischkäse in Sauce", "priceEur": "10.9"},
+        {"name": "Hähnchen Tinda", "description": "Hähnchen und Kürbis, Joghurtsauce mit Ingwer", "priceEur": "10.9"},
+        {"name": "Hähnchen Jhalfrezi", "description": "Scharfes Hähnchen mit Gemüse, Ingwer, Knoblauch, Paprika", "priceEur": "11.5"},
+        {"name": "Hähnchen Mango", "description": "Hähnchen mit Mango, Mandeln in Curry-Sahnesauce", "priceEur": "10.9"},
+        {"name": "Lamm Tinda", "description": "Gegrilltes Lamm mit Kürbis, Paprika, Zwiebeln, Ingwer", "priceEur": "11.5"},
+        {"name": "Lamm Jhalfrezi", "description": "Lamm mit Tomaten, Paprika, Zwiebeln, gebackenem Blumenkohl", "priceEur": "11.5"},
+        {"name": "Enten Curry", "description": "Ente in Currysauce (Pakistanischer Stil)", "priceEur": "11.9"},
+        {"name": "Lamm Vindaloo", "description": "Scharfes Lamm mit gebackenen Kartoffeln", "priceEur": "10.9"},
+        {"name": "Hähnchen Tikka", "description": "Mariniertes Hähnchenbrustfilet mit Joghurt, Ingwer, Zwiebeln, Paprika", "priceEur": "11.5"},
+        {"name": "Lamm Curry", "description": "Lammcurry (Pakistanischer Stil)", "priceEur": "10.9"},
+        {"name": "Enten Sabzi", "description": "Ente mit Gemüse und regionalen Gewürzen", "priceEur": "11.5"}
+      ]
+    },
+    {
+      "category": "Bier vom Fass",
+      "item": [
+        {"name": "Beck’s", "description": "Deutsches Bier", "priceEur": "6.2"},
+        {"name": "Löwenbräu", "description": "Deutsches Bier", "priceEur": "6.2"},
+        {"name": "Franziskaner Hefeweizen", "description": "Weizenbier", "priceEur": "6.2"},
+        {"name": "Alster / Radler", "description": "Bier mit Limonade", "priceEur": "6.2"},
+        {"name": "Kingfisher (0.33L)", "description": "Indisches Bier", "priceEur": "5.3"},
+        {"name": "Franziskaner Dunkel", "description": "Dunkles Weizenbier", "priceEur": "6.2"},
+        {"name": "Franziskaner Kristall", "description": "Klar gefiltertes Weizenbier", "priceEur": "6.2"},
+        {"name": "Franziskaner Alkoholfrei", "description": "Alkoholfreies Weizenbier", "priceEur": "5.3"},
+        {"name": "Beck’s Alkoholfrei", "description": "Alkoholfreies Bier", "priceEur": "5.3"}
+      ]
+    },
+    {
+      "category": "Heiße Getränke",
+      "item": [
+        {"name": "Kaffee", "description": "Kaffee", "priceEur": "2.3"},
+        {"name": "Milchkaffee", "description": "Kaffee mit Milch", "priceEur": "2.6"},
+        {"name": "Cappuccino", "description": "Cappuccino", "priceEur": "2.9"},
+        {"name": "Espresso", "description": "Espresso", "priceEur": "2.9"},
+        {"name": "Espresso Macchiato", "description": "Espresso mit Milchschaum", "priceEur": "3.5"},
+        {"name": "Doppelter Espresso", "description": "Doppelter Espresso", "priceEur": "3.5"},
+        {"name": "Schokolade mit Sahne", "description": "Heiße Schokolade mit Schlagsahne", "priceEur": "3.9"},
+        {"name": "Latte Macchiato", "description": "Geschichteter Milchkaffee", "priceEur": "3.9"},
+        {"name": "Kaffee Baileys / Amaretto", "description": "Kaffee mit Baileys oder Amaretto", "priceEur": "5.9"},
+        {"name": "Irish Coffee", "description": "Kaffee mit irischem Whiskey", "priceEur": "5.9"},
+        {"name": "Eiskaffee", "description": "Eiskaffee", "priceEur": "5.5"}
+      ]
+    },
+    {
+      "category": "Tee Auswahl",
+      "item": [
+        {"name": "Chai-Tee", "description": "Mit oder ohne Honig", "priceEur": "3.9"},
+        {"name": "Grüner Tee", "description": "Grüner Tee", "priceEur": "3.5"},
+        {"name": "Schwarzer Tee", "description": "Schwarzer Tee (Earl Grey, Darjeeling)", "priceEur": "3.2"},
+        {"name": "Jasmintee", "description": "Jasmintee", "priceEur": "3.5"},
+        {"name": "Frischer Pfefferminztee", "description": "Frischer Pfefferminztee", "priceEur": "3.5"},
+        {"name": "Kräutertee", "description": "Kräutertee", "priceEur": "3.9"},
+        {"name": "Ingwer-Zitronen-Tee", "description": "Ingwer-Zitronen-Tee", "priceEur": "3.9"}
+      ]
+    },
+    {
+      "category": "Softdrinks",
+      "item": [
+        {"name": "El Puro (0.25/0.75L)", "description": "Stilles oder sprudelndes Mineralwasser", "priceEur": "2.90/5.90"},
+        {"name": "Tafelwasser (0.2/0.7L)", "description": "Stilles oder sprudelndes Tafelwasser", "priceEur": "2.60/4.90"},
+        {"name": "Coca-Cola", "description": "Cola", "priceEur": "3.20/4.50"},
+        {"name": "Coca-Cola Light", "description": "Diät-Cola", "priceEur": "3.20/4.50"},
+        {"name": "Fanta", "description": "Orangenlimonade", "priceEur": "3.20/4.50"},
+        {"name": "Spezi", "description": "Mischung aus Cola und Orange", "priceEur": "3.20/4.50"},
+        {"name": "Sprite", "description": "Zitronen-Limetten-Limonade", "priceEur": "3.20/4.50"},
+        {"name": "Bitter Lemon", "description": "Zitronenlimonade mit bitterem Geschmack", "priceEur": "3.20/4.50"},
+        {"name": "Tonic Water", "description": "Tonic-Limonade", "priceEur": "3.20/4.50"},
+        {"name": "Ginger Ale", "description": "Ingwer-Limonade", "priceEur": "3.20/4.50"},
+        {"name": "Chelany Eistee", "description": "Hausgemachter Eistee", "priceEur": "4.8"},
+        {"name": "Chelany Limonade", "description": "Hausgemachte Limonade mit Limettensaft, Gurke", "priceEur": "4.8"}
+      ]
+    },
+    {
+      "category": "Pakistanische Softdrinks",
+      "item": [
+        {"name": "Mango Lassi", "description": "Mango-Joghurt-Smoothie", "priceEur": "4.9"},
+        {"name": "Süßer Lassi", "description": "Süßer Joghurt-Drink", "priceEur": "4.5"},
+        {"name": "Salziger Lassi", "description": "Salziger Joghurt-Drink", "priceEur": "4.5"},
+        {"name": "Nimbu Pani", "description": "Zitronenwasser mit Kräutern", "priceEur": "3.9"},
+        {"name": "Rooh Afza", "description": "Kräuter-Rosendrink", "priceEur": "3.9"},
+        {"name": "Pakola (0.33L)", "description": "Pakistanischer Softdrink", "priceEur": "3.9"}
+      ]
+    },
+    {
+      "category": "Offener Weißwein",
+      "item": [
+        {"name": "Weißburgunder (0.2L)", "description": "Pinot Blanc", "priceEur": "6.5"},
+        {"name": "Chardonnay (0.2L)", "description": "Chardonnay", "priceEur": "6.5"},
+        {"name": "Grauburgunder (0.2L)", "description": "Pinot Gris", "priceEur": "6.5"}
+      ]
+    },
+    {
+      "category": "Cocktails – Longdrinks",
+      "item": [
+        {"name": "Gin Tonic", "description": "Gin mit Tonic Water", "priceEur": "8.9"},
+        {"name": "Wodka Lemon", "description": "Wodka mit Zitronenlimonade", "priceEur": "8.9"},
+        {"name": "Wodka Orange", "description": "Wodka mit Orangensaft", "priceEur": "8.9"},
+        {"name": "Cuba Libre", "description": "Rum mit Cola und Limette", "priceEur": "8.9"},
+        {"name": "Whiskey Cola", "description": "Whiskey mit Cola", "priceEur": "8.9"},
+        {"name": "Campari Orange", "description": "Campari mit Orangensaft", "priceEur": "8.9"},
+        {"name": "Bacardi Cola", "description": "Bacardi Rum mit Cola", "priceEur": "8.9"},
+        {"name": "Malibu Orange", "description": "Malibu Rum mit Orangensaft", "priceEur": "8.9"},
+        {"name": "Aperol Spritz", "description": "Aperol mit Prosecco und Soda", "priceEur": "8.9"},
+        {"name": "Lillet Wild Berry", "description": "Lillet mit Wild Berry Tonic", "priceEur": "8.9"}
+      ]
+    },
+    {
+      "category": "Klassische Cocktails",
+      "item": [
+        {"name": "Pina Colada", "description": "Rum, Kokos, Ananas", "priceEur": "9.9"},
+        {"name": "Caipirinha", "description": "Cachaça, Limette, Zucker", "priceEur": "9.9"},
+        {"name": "Mojito", "description": "Rum, Limette, Minze, Soda", "priceEur": "9.9"},
+        {"name": "Tequila Sunrise", "description": "Tequila, Orangensaft, Grenadine", "priceEur": "9.9"},
+        {"name": "Mai Tai", "description": "Rum, Limette, Mandelsirup", "priceEur": "9.9"}
+      ]
+    },
+    {
+      "category": "Margaritas",
+      "item": [
+        {"name": "Klassische Margarita", "description": "Tequila, Limettensaft, Triple Sec", "priceEur": "9.9"},
+        {"name": "Erdbeer Margarita", "description": "Tequila, Erdbeeren, Limette, Triple Sec", "priceEur": "9.9"},
+        {"name": "Mango Margarita", "description": "Tequila, Mango, Limette, Triple Sec", "priceEur": "9.9"}
+      ]
+    },
+    {
+      "category": "Sour Cocktails",
+      "item": [
+        {"name": "Whiskey Sour", "description": "Whiskey, Zitrone, Zucker", "priceEur": "9.9"},
+        {"name": "Amaretto Sour", "description": "Amaretto, Zitrone, Zucker", "priceEur": "9.9"}
+      ]
+    },
+    {
+      "category": "Sekt",
+      "item": [
+        {"name": "Prosecco (0.1L)", "description": "Sprudelnder Weißwein", "priceEur": "4.9"},
+        {"name": "Prosecco Piccolo", "description": "Kleine Flasche Prosecco", "priceEur": "6.9"}
+      ]
+    },
+    {
+      "category": "Tequila & Wodka Cocktails",
+      "item": [
+        {"name": "Tequila Sunrise", "description": "Tequila, Orangensaft, Grenadine", "priceEur": "9.9"},
+        {"name": "Wodka Lemon", "description": "Wodka, Zitronenlimonade", "priceEur": "8.9"},
+        {"name": "Moscow Mule", "description": "Wodka, Ingwerbier, Limette", "priceEur": "9.9"}
+      ]
+    },
+    {
+      "category": "Power Cocktails",
+      "item": [
+        {"name": "Long Island Iced Tea", "description": "Tequila, Wodka, Rum, Gin, Triple Sec", "priceEur": "10.9"},
+        {"name": "Zombie", "description": "Dunkler Rum, heller Rum, Ananas, Aprikose", "priceEur": "10.9"},
+        {"name": "Planter’s Punch", "description": "Rum, Limette, Grenadine", "priceEur": "10.9"}
+      ]
+    },
+    {
+      "category": "Alkoholfreie Cocktails",
+      "item": [
+        {"name": "Virgin Colada", "description": "Kokos, Ananas", "priceEur": "6.9"},
+        {"name": "Ipanema", "description": "Limette, Ginger Ale, brauner Zucker, Minze", "priceEur": "6.9"},
+        {"name": "Mango Cooler", "description": "Mangosaft, Limette, Soda", "priceEur": "6.9"},
+        {"name": "Orange Fizz", "description": "Orange, Limette, Soda", "priceEur": "6.9"},
+        {"name": "Sweet Sunset", "description": "Exotische Früchtemischung, Zitrone, Grenadine", "priceEur": "6.9"}
+      ]
+    },
+    {
+      "category": "Shots",
+      "item": [
+        {"name": "Tequila", "description": "Mit Salz und Limette", "priceEur": "3.5"},
+        {"name": "Sambuca", "description": "Mit Kaffeebohne", "priceEur": "3.5"},
+        {"name": "Jägermeister", "description": "Kräuterlikör", "priceEur": "3.5"},
+        {"name": "Ramazzotti", "description": "Italienischer Kräuterlikör", "priceEur": "3.5"}
+      ]
+    },
+    {
+      "category": "Spirituosen",
+      "item": [
+        {"name": "Wodka", "description": "Klassischer Wodka", "priceEur": "3.9"},
+        {"name": "Gin", "description": "London Dry Gin", "priceEur": "3.9"},
+        {"name": "Rum", "description": "Weißer oder dunkler Rum", "priceEur": "3.9"},
+        {"name": "Tequila", "description": "Gold oder Silber Tequila", "priceEur": "3.9"},
+        {"name": "Whisky", "description": "Scotch, Bourbon oder Irischer Whiskey", "priceEur": "3.9"},
+        {"name": "Cognac", "description": "Französischer Brandy", "priceEur": "4.9"}
+      ]
+    }
+  ]

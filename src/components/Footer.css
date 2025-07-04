@@ -1,14 +1,13 @@
 .footer {
-  margin-top: -100px; /* 👈 yeh line add karo ya adjust karo */
-  padding-top: 160px; /* box ke neeche se distance maintain karne ke liye */
   background-color: #111;
   color: white;
-  padding: 2rem;
-  z-index: 5;
+  padding: 2rem 0;
   position: relative;
+  z-index: 5;
+  width: 100%;
+  bottom: 0;
 }
-
-
+/* Upar wala section as it is */
 .top-row {
   border-bottom: 1px solid #444;
   padding-bottom: 5rem;
@@ -20,20 +19,21 @@
   min-width: 150px;
 }
 
+/* Neeche wala section ka border dark kar diya */
 .bottom-row {
-  padding-top: 1rem;
-  
+  padding-top: 6rem;
+  border-top: 2px solid #444; /* 👈 Added this line for dark border */
+  padding-bottom: 2rem; /* Optional: spacing niche ke liye */
 }
 
 .newsletter-input {
   background-color: #fff;
   border: none;
-  color: white;
+  color: #000; /* 👈 Changed to black text for visibility */
   padding: 0.3rem 0.6rem;
   border-radius: 3px;
   outline: none;
   width: 200px;
-   
 }
 
 .newsletter-input::placeholder {
@@ -58,3 +58,20 @@
   color: #ccc;
   font-style: italic;
 }
+
+/* White space bilkul neeche se hata diya */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+

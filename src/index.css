@@ -39,3 +39,6 @@ nav::-webkit-scrollbar-thumb {
   background-color: #ccc;
   border-radius: 3px;
 }
+html {
+  scroll-behavior: smooth;
+}

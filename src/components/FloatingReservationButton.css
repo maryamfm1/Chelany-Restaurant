@@ -1,0 +1,62 @@
+.floating-reservation-container {
+  position: fixed;
+  top: 120px; /* Navbar ke qareeb */
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* Common Circle Button */
+.icon-button {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  color: #dc3545;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Reservation button special style */
+.reservation-icon {
+  background-color: white;  /* white background */
+  color: #dc3545;           /* red icon */
+    /* red border */
+}
+
+.reservation-icon:hover {
+  background-color: white;
+  color: #dc3545;
+}
+
+/* Slide Panel */
+.reservation-panel {
+  background-color: #fff;
+  width: 240px;
+  padding: 15px;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 60px;
+  top: 0;
+  transform: translateX(120%);
+  transition: transform 0.4s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.floating-reservation-container.open .reservation-panel {
+  transform: translateX(0%);
+}

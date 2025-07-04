@@ -1,4 +1,5 @@
 .hero-container {
+  margin-top: 2rem; /* Navbar ke neeche thoda space diya */
   position: relative;
   width: 100%;
   height: 80vh;
@@ -10,11 +11,11 @@
 }
 
 .hero-section {
-  height: 600px; /* apni image ki height set karo */
-   
+  height: 600px; /* Image ki height */
   position: relative;
   z-index: 1;
 }
+
 .hero-bg-img {
   position: absolute;
   top: 0;
@@ -23,7 +24,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: blur(4px); /* 👈 yeh line add karo, adjust kar sakte ho (1px–4px) */
+  filter: blur(4px); /* Blur effect background ke liye */
 }
 
 .hero-overlay {
@@ -44,11 +45,10 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-shadow: 2px 2px 4px #000000;
   padding-bottom: 5rem;
-   
-} 
+}
 
 .hero-title {
-  font-size: 4.5rem; /* size increased */
+  font-size: 4.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   z-index: 8;
@@ -56,13 +56,12 @@
 }
 
 .hero-subtitle {
-  font-size: 2.2rem; /* size increased */
+  font-size: 2.2rem;
   font-weight: 400;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Responsive */
-
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.6rem;

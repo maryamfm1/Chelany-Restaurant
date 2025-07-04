@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "menu": "Speisekarte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "order": "Bestellen",
+    "Gallery": "Galerie"
+  },
+  "background": "Hintergrund",
+  "restaurantName": "Chelany Restaurant",
+  "welcomeMessage": "WILLKOMMEN IM CHELANY RESTAURANT & BAR",
+  "welcomeDescription": "Hier erleben Sie den echten Geschmack köstlicher Speisen kombiniert mit außergewöhnlicher Gastfreundschaft. Unsere Spezialitäten sind eine perfekte Mischung aus traditionellen Berliner Aromen und internationalen Gerichten, die jeden Gaumen zufriedenstellen. Kommen Sie und genießen Sie einen Ort, an dem gutes Essen auf warme Momente und bleibende Erinnerungen trifft.",
+  "contact": {
+    "phone": "+49 30 521 02 600",
+    "email": "alishafaqat140@gmail.com",
+    "address": "Chelany-Mitte Restaurant, Torstraße 221, 10115 Berlin"
+  },
+  "followUs": "Folgen Sie uns:",
+  "openingHours": "Öffnungszeiten: Montag – Sonntag: 12:00 – 24:00 Uhr",
+  "hygieneNotice": "Wir befolgen strenge Hygiene- und Sicherheitsmaßnahmen zu Ihrem Schutz.",
+  
+  "orderPage": {
+    "title": "Online bestellen",
+    "cartReview": "Überprüfen Sie Ihren Warenkorb und wählen Sie eine Zahlungsmethode",
+    "tableHeaders": {
+      "item": "Artikel",
+      "quantity": "Menge",
+      "price": "Preis",
+      "instructions": "Anweisungen",
+      "total": "Gesamt",
+      "remove": "Entfernen"
+    },
+    "grandTotal": "Gesamtsumme:",
+    "paymentOptions": "Zahlungsoptionen",
+    "paypal": "PayPal",
+    "paypalEmail": "PayPal E-Mail",
+    "cashOnDelivery": "Barzahlung bei Lieferung",
+    "emailPlaceholder": "sie@beispiel.de"
+  }
+}

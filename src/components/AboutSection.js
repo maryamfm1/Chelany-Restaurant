@@ -1,16 +1,16 @@
 import React from "react";
-import "./AboutSection.css";  // external CSS file use karenge styling ke liye
+import "./AboutSection.css";
+import { useTranslation } from 'react-i18next';
 
-const AboutSection = ({
-  title = "WELCOME TO CHELANY RESTAURANT & BAR",
-  description = 'where you experience the true taste of delicious food combined with exceptional hospitality. Our specialties include a perfect blend of traditional Berlin flavors and international dishes, crafted to satisfy every palate. Come and enjoy a place where great food meets warm moments and lasting memories.',
-}) => {
+const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="about-container">
-        <h2 className="about-title">{title}</h2>
+        <h2 className="about-title">{t("welcomeMessage")}</h2>
         <div className="separator"></div>
-        <p className="about-description">{description}</p>
+        <p className="about-description">{t("welcomeDescription")}</p>
       </div>
     </section>
   );

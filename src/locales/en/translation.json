@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "order": "Order",
+    "Gallery": "Gallery"
+  },
+  "background": "Background",
+  "restaurantName": "Chelany Restaurant",
+  "welcomeMessage": "WELCOME TO CHELANY RESTAURANT & BAR",
+  "welcomeDescription": "Where you experience the true taste of delicious food combined with exceptional hospitality. Our specialties include a perfect blend of traditional Berlin flavors and international dishes, crafted to satisfy every palate. Come and enjoy a place where great food meets warm moments and lasting memories.",
+  "contact": {
+    "phone": "+49 30 521 02 600",
+    "email": "alishafaqat140@gmail.com",
+    "address": "Chelany-Mitte Restaurant, Torstraße 221, 10115 Berlin"
+  },
+  "followUs": "Follow Us:",
+  "openingHours": "Opening Hours: Monday – Sunday: 12:00 PM – 12:00 AM",
+  "hygieneNotice": "We follow strict hygiene & safety measures for your protection.",
+  
+  "orderPage": {
+    "title": "Order Online",
+    "cartReview": "Review your cart and choose a payment method",
+    "tableHeaders": {
+      "item": "Item",
+      "quantity": "Qty",
+      "price": "Price",
+      "instructions": "Instructions",
+      "total": "Total",
+      "remove": "Remove"
+    },
+    "grandTotal": "Grand Total:",
+    "paymentOptions": "Payment Options",
+    "paypal": "PayPal",
+    "paypalEmail": "PayPal Email",
+    "cashOnDelivery": "Cash on Delivery",
+    "emailPlaceholder": "you@example.com"
+  }
+}

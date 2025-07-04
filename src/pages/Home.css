@@ -106,3 +106,9 @@ h2.text-center {
     overflow: visible;
     padding-bottom: 4rem; /* space before footer */
   }
+  .hero-about-wrapper {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5rem; /* footer se gap */
+  }
+  

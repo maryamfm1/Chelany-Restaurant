@@ -1,6 +1,5 @@
 .about-section {
-  margin-top: -180px;
-  padding-bottom: -180px; /* ya 0rem try karo */
+  margin-top: -150px; /* overlap ke liye */
   position: relative;
   z-index: 10;
   display: flex;
@@ -8,21 +7,16 @@
 }
 
 .about-container {
-  max-width: 800px;
+  max-width: 600px;
   background-color: white;
   padding: 2rem 3rem;
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* shadow dark kar diya */
   position: relative;
   z-index: 20;
   height: 500px;
-  box-shadow: 4px 4px rgb(182, 182, 182);
-   
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px; /* footer se thoda gap maintain ho */
+  margin-bottom: 3rem; /* footer se space */
 }
-
-
 
 .about-title {
   font-weight: 700;
@@ -30,8 +24,9 @@
   margin-bottom: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #bb8b3a; /* amber/golden tone for Caribbean vibe */
+  color: #bb8b3a;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .separator {
@@ -47,4 +42,6 @@
   line-height: 1.6;
   text-align: center;
   color: #555;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
