@@ -19,7 +19,7 @@
   "followUs": "Follow Us:",
   "openingHours": "Opening Hours: Monday – Sunday: 12:00 PM – 12:00 AM",
   "hygieneNotice": "We follow strict hygiene & safety measures for your protection.",
-  
+
   "orderPage": {
     "title": "Order Online",
     "cartReview": "Review your cart and choose a payment method",
@@ -37,5 +37,24 @@
     "paypalEmail": "PayPal Email",
     "cashOnDelivery": "Cash on Delivery",
     "emailPlaceholder": "you@example.com"
+  },
+
+  "reservation": {
+    "title": "Book Your Table",
+    "confirmation": "Thank you, {{name}}! Your reservation is confirmed.",
+    "confirmationDetails": "We look forward to welcoming you on {{date}} at {{time}}.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Guests",
+      "placeholderName": "Your full name",
+      "placeholderEmail": "your.email@example.com",
+      "placeholderPhone": "+49 123 4567890",
+      "bookNow": "Book Now"
+    },
+    "error": "Please fill in all fields correctly."
   }
 }

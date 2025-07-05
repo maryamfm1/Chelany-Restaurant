@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
 import HeroSection from "../components/HeroSection.js";
 import AboutSection from "../components/AboutSection.js";
 import VideoGallerySection from "../components/VideoGallerySection.js";

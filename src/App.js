@@ -9,7 +9,7 @@ import Reservation from "./pages/Reservation.js";
 import OrderOnline from "./pages/Order.js";
 import Menu from "./pages/Menu.js";
 import { CartProvider } from "./CartContext.js";
-
+import FloatingReservation from "./components/FloatingReservation.js"; // ✅ Add this
 function App() {
   return (
     <CartProvider>
@@ -22,6 +22,7 @@ function App() {
           <Route path="/order-online" element={<OrderOnline />} />
           <Route path="/menu" element={<Menu />} />
         </Routes>
+        <FloatingReservation /> {/* ✅ Floating Buttons Added */}
         <Footer />
       </Router>
     </CartProvider>

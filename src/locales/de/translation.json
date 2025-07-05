@@ -19,7 +19,7 @@
   "followUs": "Folgen Sie uns:",
   "openingHours": "Öffnungszeiten: Montag – Sonntag: 12:00 – 24:00 Uhr",
   "hygieneNotice": "Wir befolgen strenge Hygiene- und Sicherheitsmaßnahmen zu Ihrem Schutz.",
-  
+
   "orderPage": {
     "title": "Online bestellen",
     "cartReview": "Überprüfen Sie Ihren Warenkorb und wählen Sie eine Zahlungsmethode",
@@ -37,5 +37,24 @@
     "paypalEmail": "PayPal E-Mail",
     "cashOnDelivery": "Barzahlung bei Lieferung",
     "emailPlaceholder": "sie@beispiel.de"
+  },
+
+  "reservation": {
+    "title": "Reservieren Sie einen Tisch",
+    "confirmation": "Vielen Dank, {{name}}! Ihre Reservierung ist bestätigt.",
+    "confirmationDetails": "Wir freuen uns, Sie am {{date}} um {{time}} begrüßen zu dürfen.",
+    "form": {
+      "name": "Vollständiger Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "guests": "Gäste",
+      "placeholderName": "Ihr vollständiger Name",
+      "placeholderEmail": "ihre.email@beispiel.de",
+      "placeholderPhone": "+49 123 4567890",
+      "bookNow": "Jetzt reservieren"
+    },
+    "error": "Bitte füllen Sie alle Felder korrekt aus."
   }
 }
