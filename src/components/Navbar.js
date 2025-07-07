@@ -146,7 +146,7 @@ export default function Navbar() {
                     ref={searchInputRef}
                     type="search"
                     className="form-control search-input border border-danger rounded-3"
-                    placeholder={t("navbar.search") || "Search..."}
+                    placeholder={t("navbar.Search") || "Search..."}
                     autoComplete="off"
                   />
                 </form>

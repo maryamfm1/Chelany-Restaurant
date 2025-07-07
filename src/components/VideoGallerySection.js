@@ -17,7 +17,7 @@ const VideoGallerySection = () => {
       {/* Image Gallery */}
       <div className="image-gallery">
         <div className="gallery-image">
-          <img src="/images/cry.jpg" alt="Gallery 1" loading="lazy" />
+          <img src="/images/bi.jpg" alt="Gallery 1" loading="lazy" />
         </div>
         <div className="gallery-image">
           <img src="/images/Gulab.jpeg" alt="Gallery 2" loading="lazy" />
