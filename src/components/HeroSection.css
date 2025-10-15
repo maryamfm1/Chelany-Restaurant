@@ -48,7 +48,8 @@
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 2.2rem; /* Font thoda chota, readable and visible */
+  line-height: 1.2; 
   font-weight: 700;
   margin-bottom: 1rem;
   z-index: 8;
@@ -62,9 +63,11 @@
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.6rem;
+@media (max-width: 480px) {
+  .hero-container {
+    height: 100vh; /* Full screen height */
+    padding-bottom: 4rem; /* Bottom se space takay text cut na ho */
+    box-sizing: border-box;
   }
 
   .hero-subtitle {
@@ -72,6 +75,14 @@
   }
 
   .hero-container {
-    height: 60vh;
+    height: 100vh; /* mobile view mein full screen height le lo */
+    padding-bottom: 3rem; /* thoda extra space bottom se */
+    box-sizing: border-box;
+  }
+
+  .hero-text {
+    padding-bottom: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

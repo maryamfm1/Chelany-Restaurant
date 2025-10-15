@@ -49,9 +49,30 @@ export const CartProvider = ({ children }) => {
     );
   };
 
-  // Context provider return karo jisme cart aur add/remove functions accessible hain
+  // Quantity update karne ka function jo item ki quantity change karega
+  const updateQuantity = (itemName, itemPrice, newQuantity) => {
+    setCart((prevCart) =>
+      prevCart.map((cartItem) =>
+        cartItem.name === itemName && cartItem.price === itemPrice
+          ? {
+              ...cartItem,
+              quantity: Math.max(1, newQuantity), // Quantity kam se kam 1 honi chahiye
+            }
+          : cartItem
+      )
+    );
+  };
+
+  // Cart clear karne ka function jab order place ho jaye
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  // Context provider return karo jisme cart aur add/remove/update/clear functions accessible hain
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -1,15 +1,16 @@
 import React from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom"; // ✅ Added for navigation
 
 const Footer = () => {
   const { t } = useTranslation();
 
-  // Added id="contact" for scroll target
   return (
     <footer id="contact" className="bg-dark text-white pt-5 pb-4 mt-5">
       <div className="container">
 
+        {/* Contact Info */}
         <div id="footer-contact" className="row border-bottom border-secondary pb-4 mb-4">
           <div className="col-md-4 mb-3 d-flex align-items-center gap-2">
             <Phone size={20} />
@@ -34,6 +35,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Google Map */}
         <div className="row mb-4">
           <div className="col-12 rounded overflow-hidden shadow-sm">
             <iframe
@@ -49,6 +51,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Social Links + Opening Hours */}
         <div className="row align-items-center border-top border-secondary pt-4">
           <div className="col-md-6 mb-3 d-flex align-items-center gap-3">
             <span className="fw-bold text-uppercase small">{t("followUs")}</span>
@@ -79,6 +82,16 @@ const Footer = () => {
             </em>
           </div>
         </div>
+
+        {/* Privacy Policy Link */}
+        <div className="row mt-3">
+          <div className="col-12 text-center small">
+            <Link to="/privacy-policy" className="text-white text-decoration-underline">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
+
       </div>
     </footer>
   );

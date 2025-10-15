@@ -1,10 +1,16 @@
 import React from "react";
 import "./FloatingReservationButton.css";
 import { FaCalendarAlt, FaInstagram, FaFacebookF } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function FloatingReservation() {
   const navigate = useNavigate();
+  const location = useLocation(); // current path milta hai
+
+  // agar current path "/" (home) nahi hai to kuch render mat karo
+  if (location.pathname !== "/") {
+    return null;
+  }
 
   const goToReservation = () => {
     navigate("/reservation");

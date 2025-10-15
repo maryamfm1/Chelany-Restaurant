@@ -4,6 +4,8 @@ import HeroSection from "../components/HeroSection.js";
 import AboutSection from "../components/AboutSection.js";
 import VideoGallerySection from "../components/VideoGallerySection.js";
 import FourRestaurantsSection from "../components/FourRestaurantsSection.js";
+import GallerySection from "../components/GallerySection.js";
+
 import "./Home.css";
 
 const Home = () => {
@@ -25,6 +27,7 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <VideoGallerySection />
+      <GallerySection /> 
       <FourRestaurantsSection />
     </div>
   );

@@ -51,7 +51,7 @@ export default function Navbar() {
     }
   };
 
-  // About click handler (updated for smooth scroll on home)
+  // About click handler
   const handleAboutClick = (e) => {
     e.preventDefault();
     if (location.pathname === '/') {
@@ -61,13 +61,23 @@ export default function Navbar() {
     }
   };
 
-  // Contact click handler (aap ka pehle jaisa hi)
+  // Contact click handler
   const handleContactClick = (e) => {
     e.preventDefault();
     if (location.pathname === '/') {
       scrollToId('footer-contact');
     } else {
       navigate('/', { state: { scrollToContact: true } });
+    }
+  };
+
+  // Gallery click handler — ye wala humne add kiya hai
+  const handleGalleryClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      scrollToId('gallery');
+    } else {
+      navigate('/', { state: { scrollToGallery: true } });
     }
   };
 
@@ -126,29 +136,18 @@ export default function Navbar() {
 
           {/* Right Side: Gallery + Search + Language */}
           <ul className="navbar-nav ms-auto align-items-lg-center flex-row gap-3">
-            {/* Gallery */}
+            {/* Gallery button updated to use handler */}
             <li className="nav-item">
-              <Link to="/gallery" className="nav-link fw-bold">{t('navbar.Gallery') || 'Gallery'}</Link>
+              <a href="/" onClick={handleGalleryClick} className="nav-link fw-bold">
+                {t('navbar.Gallery') || 'Gallery'}
+              </a>
             </li>
 
             {/* Search */}
             <li className="nav-item position-relative d-flex align-items-center">
-              <button
-                className="btn btn-link nav-link p-0 search-toggle"
-                onClick={() => setSearchOpen(!searchOpen)}
-                aria-label="Toggle search"
-              >
-                <i className="bi bi-search search-icon text-danger"></i>
-              </button>
               {searchOpen && (
                 <form className="search-form d-inline-block ms-2" onSubmit={(e) => e.preventDefault()}>
-                  <input
-                    ref={searchInputRef}
-                    type="search"
-                    className="form-control search-input border border-danger rounded-3"
-                    placeholder={t("navbar.Search") || "Search..."}
-                    autoComplete="off"
-                  />
+                  {/* Search input etc yahan add kar sakte hain */}
                 </form>
               )}
             </li>

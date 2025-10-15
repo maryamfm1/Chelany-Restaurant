@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Modal, Button, Toast } from "react-bootstrap";
+import { Modal, Button, Toast, Alert } from "react-bootstrap"; // ✅ Alert import kiya
 import { useCart } from "../CartContext.js";
+import axios from "axios";
+import { useLocation } from "react-router-dom"; // <-- useLocation import kiya
+import { useTranslation } from "react-i18next";
+
+
 
 const Menu = () => {
   const [language, setLanguage] = useState("en");
+  const { t } = useTranslation();
   const [menu, setMenu] = useState([]);
   const [activeCategory, setActiveCategory] = useState("");
   const [zoomedImg, setZoomedImg] = useState(null);
@@ -14,31 +20,57 @@ const Menu = () => {
   const [showInstructionsModal, setShowInstructionsModal] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
   const [instructions, setInstructions] = useState("");
+  const [orderStatus, setOrderStatus] = useState("available");
+
+  // URL query params ke liye
+  const location = useLocation();
+
+  // Step 1: URL se discount code capture kar ke localStorage mein save karna
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const discount = params.get("discount");
+    if (discount) {
+      localStorage.setItem("discountCode", discount);
+      console.log("Discount code saved:", discount);
+    }
+  }, [location.search]);
 
   useEffect(() => {
-    const fileToFetch = language === "en" ? "/menu.json" : "/menuDe.json";
+    const fetchOrderStatus = async () => {
+      try {
+        const res = await axios.get("https://api.chelanyrestaurant-berlin.de/api/settings/online-order");
+        setOrderStatus(res.data.status);
+      } catch (error) {
+        console.error("Error fetching order status:", error);
+      }
+    };
+    fetchOrderStatus();
+  }, []);
 
-    fetch(fileToFetch)
-      .then((res) => res.json())
-      .then((data) => {
-        const normalizedData = data.map(({ Category, Items }) => ({
-          category: Category,
-          items: Items.map(({ Name, Description, "Price (€)": Price, Img }) => ({
-            name: Name,
-            desc: Description,
-            price:
-              Price === "-" || Price === "" || Price === null
-                ? null
-                : Array.isArray(Price)
-                ? Price
-                : Price,
-            img: Img || null,
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        const res = await axios.get(`https://api.chelanyrestaurant-berlin.de/api/menu?lang=${language}`);
+        const normalizedData = res.data.map(category => ({
+          category: category.name,
+          items: category.items.map(item => ({
+            name: item.name,
+            desc: item.description,
+            price: item.price,
+            img: item.image,
           })),
         }));
+
         setMenu(normalizedData);
-        if (normalizedData.length > 0) setActiveCategory(normalizedData[0].category);
-      })
-      .catch((err) => console.error("Error fetching menu:", err));
+        if (normalizedData.length > 0) {
+          setActiveCategory(normalizedData[0].category);
+        }
+        console.log('Menu loaded:', normalizedData);
+      } catch (error) {
+        console.error('Error fetching menu:', error);
+      }
+    };
+    fetchMenu();
   }, [language]);
 
   const handleQuantityChange = (itemName, value) => {
@@ -109,6 +141,15 @@ const Menu = () => {
         className="container py-5 bg-white bg-opacity-75 rounded"
         style={{ position: "relative", zIndex: 1 }}
       >
+
+        {/* Order Status Alert */}
+{orderStatus === "unavailable" && (
+  <Alert variant="warning" className="text-center fw-bold fs-5">
+    ⚠️ {t("orderPage.deliveryClosedMessage", "Home delivery is temporarily closed")}
+  </Alert>
+)}
+
+
         <div className="mb-3 d-flex justify-content-center gap-3 flex-wrap">
           <Button
             variant={language === "en" ? "danger" : "outline-danger"}
@@ -126,7 +167,6 @@ const Menu = () => {
           </Button>
         </div>
 
-        {/* Categories buttons updated here */}
         <div className="d-flex mb-4 overflow-auto" style={{ gap: "0.5rem" }}>
           {menu.map(({ category }) => (
             <button
@@ -138,7 +178,7 @@ const Menu = () => {
               aria-pressed={activeCategory === category}
               style={{
                 whiteSpace: "nowrap",
-                borderRadius: "0.25rem", // normal border radius, no pill
+                borderRadius: "0.25rem",
                 padding: "0.25rem 0.6rem",
                 fontWeight: "600",
                 minWidth: "auto",
@@ -149,6 +189,7 @@ const Menu = () => {
           ))}
         </div>
 
+        {/* Menu Items */}
         {menu
           .filter(({ category }) => category === activeCategory)
           .map(({ category, items }) => (
@@ -179,7 +220,6 @@ const Menu = () => {
                       {Array.isArray(price) ? (
                         <select
                           className="form-select mb-2"
-                          aria-label={`Select price for ${name}`}
                           value={
                             quantities[name]?.selectedPrice || price[0]
                           }
@@ -205,13 +245,9 @@ const Menu = () => {
                         <p className="text-muted mb-2">Price not available</p>
                       )}
 
-                      <div
-                        className="d-flex align-items-center mb-3"
-                        style={{ maxWidth: "120px", gap: "0.4rem" }}
-                      >
+                      <div className="d-flex align-items-center mb-3" style={{ maxWidth: "120px", gap: "0.4rem" }}>
                         <button
                           className="btn btn-danger btn-sm"
-                          aria-label={`Decrease quantity for ${name}`}
                           onClick={() =>
                             handleQuantityChange(
                               name,
@@ -219,30 +255,20 @@ const Menu = () => {
                             )
                           }
                           disabled={(quantities[name]?.quantity || 1) <= 1}
-                          style={{ padding: "0.25rem 0.5rem" }}
                         >
                           −
                         </button>
-                        <span
-                          className="fw-bold"
-                          style={{
-                            minWidth: "25px",
-                            textAlign: "center",
-                            userSelect: "none",
-                          }}
-                        >
+                        <span className="fw-bold" style={{ minWidth: "25px", textAlign: "center" }}>
                           {quantities[name]?.quantity || 1}
                         </span>
                         <button
                           className="btn btn-danger btn-sm"
-                          aria-label={`Increase quantity for ${name}`}
                           onClick={() =>
                             handleQuantityChange(
                               name,
                               (quantities[name]?.quantity || 1) + 1
                             )
                           }
-                          style={{ padding: "0.25rem 0.5rem" }}
                         >
                           +
                         </button>
@@ -250,14 +276,7 @@ const Menu = () => {
 
                       <button
                         onClick={() => handleAddToCart({ name, desc, price, img })}
-                        aria-label={`Add ${name} to cart`}
-                        className="btn btn-danger btn-sm"
-                        style={{
-                          padding: "0.25rem 0.5rem",
-                          width: "auto",
-                          minWidth: "auto",
-                          alignSelf: "flex-start",
-                        }}
+                        className="btn btn-danger mt-auto"
                       >
                         Add to Cart
                       </button>
@@ -268,9 +287,19 @@ const Menu = () => {
             </section>
           ))}
 
-        <Modal show={!!zoomedImg} onHide={() => setZoomedImg(null)} centered>
+        {/* Zoomed Image Modal */}
+        <Modal
+          show={!!zoomedImg}
+          onHide={() => setZoomedImg(null)}
+          centered
+          size="lg"
+        >
           <Modal.Body className="p-0">
-            <img src={zoomedImg} alt="Zoomed Item" style={{ width: "100%" }} />
+            <img
+              src={zoomedImg}
+              alt="Zoomed"
+              style={{ width: "100%", height: "auto", borderRadius: "0.25rem" }}
+            />
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setZoomedImg(null)}>
@@ -279,19 +308,20 @@ const Menu = () => {
           </Modal.Footer>
         </Modal>
 
+        {/* Add Instructions Modal */}
         <Modal
           show={showInstructionsModal}
           onHide={() => setShowInstructionsModal(false)}
           centered
         >
           <Modal.Header closeButton>
-            <Modal.Title>Add special instructions (optional)</Modal.Title>
+            <Modal.Title>Special Instructions</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <textarea
               className="form-control"
-              rows={4}
-              placeholder="Write special instructions here..."
+              rows="3"
+              placeholder="Add any special instructions here..."
               value={instructions}
               onChange={(e) => setInstructions(e.target.value)}
             />
@@ -301,23 +331,30 @@ const Menu = () => {
               Cancel
             </Button>
             <Button variant="danger" onClick={handleConfirmAddToCart}>
-              Confirm & Add to Cart
+              Add to Cart
             </Button>
           </Modal.Footer>
         </Modal>
 
+        {/* Toast Notification */}
         <Toast
-          show={showToast}
           onClose={() => setShowToast(false)}
+          show={showToast}
           delay={3000}
           autohide
-          style={{ position: "fixed", bottom: 20, right: 20, zIndex: 1051 }}
+          style={{
+            position: "fixed",
+            bottom: 20,
+            right: 20,
+            minWidth: "200px",
+            zIndex: 1050,
+          }}
         >
           <Toast.Body>{toastMessage}</Toast.Body>
         </Toast>
       </div>
     </div>
   );
-};
+};  
 
 export default Menu;

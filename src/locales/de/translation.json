@@ -14,16 +14,51 @@
   "welcomeDescription": "Hier erleben Sie den echten Geschmack köstlicher Speisen kombiniert mit außergewöhnlicher Gastfreundschaft. Unsere Spezialitäten sind eine perfekte Mischung aus traditionellen Berliner Aromen und internationalen Gerichten, die jeden Gaumen zufriedenstellen. Kommen Sie und genießen Sie einen Ort, an dem gutes Essen auf warme Momente und bleibende Erinnerungen trifft.",
   "contact": {
     "phone": "+49 30 521 02 600",
-    "email": "alishafaqat140@gmail.com",
+    "email": "chelanyberlin@gmail.com",
     "address": "Chelany-Mitte Restaurant, Torstraße 221, 10115 Berlin"
   },
   "followUs": "Folgen Sie uns:",
   "openingHours": "Öffnungszeiten: Montag – Sonntag: 12:00 – 24:00 Uhr",
   "hygieneNotice": "Wir befolgen strenge Hygiene- und Sicherheitsmaßnahmen zu Ihrem Schutz.",
-
   "orderPage": {
     "title": "Online bestellen",
+    "successMessage": "Bestellung erfolgreich aufgegeben! Voraussichtliche Lieferung: 40 Minuten",
+    "outOfRadiuss": "Entschuldigung, unsere Lieferung ist nur innerhalb eines Radius von 4 km verfügbar.",
+   "placedAt":"Platziert Bei",
+   "discount":"Rabatt",
+   "deliveryClosedMessage":"Die Hauslieferung ist vorübergehend geschlossen",
+    "check": "Status Prüfen",
+    "paymentMethod": "Zahlungsmethode",
     "cartReview": "Überprüfen Sie Ihren Warenkorb und wählen Sie eine Zahlungsmethode",
+    "cartEmpty": "Ihr Warenkorb ist leer.",
+    "fillAllFields": "Bitte füllen Sie alle erforderlichen Felder aus.",
+    "successMessageWithId": "Bestellung erfolgreich aufgegeben! ",
+    "errorMessage": "Beim Aufgeben Ihrer Bestellung ist ein Problem aufgetreten. Bitte versuchen Sie es erneut.",
+    "success": "Erfolg",
+    "subtotal": "Zwischensumme",
+    "outOfRadius": "Leider ist unsere Lieferung nur im Umkreis von 7 km möglich.",
+    "tip": "Tipp",
+    "finalTotal": "Gesamt",
+    "locationError": "Bitte aktivieren Sie den Standort, um eine Bestellung aufzugeben",
+
+    "error": "Fehler",
+    "checkOrderStatus": "Bestellstatus prüfen",
+    "customerDetails": "Kundendaten",
+    "name": "Name",
+    "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+    "email": "E-Mail",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "address": "Lieferadresse",
+    "addressPlaceholder": "Bitte geben Sie eine Adresse innerhalb von 7 km ein. Lieferungen außerhalb dieses Bereichs sind nicht möglich.",
+    "paymentOptions": {
+      "paypal": "PayPal",
+      "cash": "Barzahlung bei Lieferung"
+    },
+    "paypalEmail": "PayPal E-Mail",
+    "paypalEmailPlaceholder": "Geben Sie Ihre PayPal E-Mail ein",
+    "proceedCheckout": "Zur Kasse",
     "tableHeaders": {
       "item": "Artikel",
       "quantity": "Menge",
@@ -32,14 +67,47 @@
       "total": "Gesamt",
       "remove": "Entfernen"
     },
-    "grandTotal": "Gesamtsumme:",
-    "paymentOptions": "Zahlungsoptionen",
-    "paypal": "PayPal",
-    "paypalEmail": "PayPal E-Mail",
-    "cashOnDelivery": "Barzahlung bei Lieferung",
-    "emailPlaceholder": "sie@beispiel.de"
-  },
+    "none": "Keine",
+    "grandTotal": "Gesamtsumme",
+    "placeOrder": "Bestellung aufgeben",
+    "form": {
+      "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "paymentMethod": "Zahlungsmethode",
+      "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+      "addressPlaceholder": "Bitte geben Sie eine Adresse innerhalb von 7 km ein. Lieferungen außerhalb dieses Bereichs sind nicht möglich.",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Kontakt",
+      "address": "Adresse",
+      "paypalEmail": "PayPal E-Mail Id",
+      "paypalEmailPlaceholder": "Geben Sie Ihre PayPal E-Mail ein",
+      "tip": "Möchten Sie Trinkgeld geben",
+      "tipPlaceholder": " Geben Sie den Trinkgeldbetrag ein (optional)"
 
+      
+    },
+    "orderStatusButton": "Bestellstatus prüfen",
+    "modalTitle": "Bestellstatus",
+    "enterOrderId": "Geben Sie Ihre Bestell-ID ein",
+    "enterOrderIdPlaceholder": "Bestell-ID",
+    "checkStatus": "Status prüfen",
+    "loading": "Wird geladen...",
+    "status": "Status",
+    "totalPrice": "Gesamtpreis",
+    "close": "Schließen",
+    "enterOrderIdError": "Bitte geben Sie eine Bestell-ID ein",
+    "orderNotFound": "Bestellung nicht gefunden",
+    "statusFetchError": "Fehler beim Abrufen des Bestellstatus",
+    "removeItem": "Artikel entfernen",
+    "paypalEmailRequired": "Bitte geben Sie Ihre PayPal E-Mail an",
+    "cancelOrder": "Bestellung stornieren",
+    "confirmCancel": "Möchten Sie diese Bestellung wirklich stornieren?",
+    "cancelSuccess": "Bestellung erfolgreich storniert.",
+    "cancelFail": "Bestellung konnte nicht storniert werden.",
+     
+    "cancelError": "Fehler beim Stornieren der Bestellung."
+  },
   "reservation": {
     "title": "Reservieren Sie einen Tisch",
     "confirmation": "Vielen Dank, {{name}}! Ihre Reservierung ist bestätigt.",
@@ -54,8 +122,22 @@
       "placeholderName": "Ihr vollständiger Name",
       "placeholderEmail": "ihre.email@beispiel.de",
       "placeholderPhone": "+49 123 4567890",
-      "bookNow": "Jetzt reservieren"
+      "bookNow": "Jetzt reservieren",
+      "message": "Nachricht",
+      "placeholderMessage": "Ihre Nachricht hier"
     },
-    "error": "Bitte füllen Sie alle Felder korrekt aus."
-  }
+    "error": "Bitte füllen Sie alle Felder korrekt aus.",
+    "apiError": "Entschuldigung, etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut."
+  },
+  
+
+    "fourRestaurants": {
+      "altLeft": "Gericht links",
+      "altRight": "Gerichte rechts",
+      "titleLine1": "Chelany Restaurant",
+      "titleLine2": "im Herzen Berlin",
+      "subHeading": "Indisches Essen in allen Variationen",
+      "description": "Vom Candle-Light-Dinner bis zu großen Gruppen oder Veranstaltungen ist jeder bei uns willkommen.",
+      "flowerAlt": "Blumen-Symbol"
+    }
 }

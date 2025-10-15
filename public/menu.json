@@ -271,116 +271,117 @@
       {"Name": "Chelany Limonade", "Description": "homemade lemonade with lime juice, cucumber", "Price (€)": "4.80"}
     ]
   },
-  {
-    "Category": "Pakistani soft Drinks",
-    "Items": [
-      {"Name": "Mango Lassi", "Description": "mango yogurt smoothie", "Price (€)": "4.90"},
-      {"Name": "Sweet Lassi", "Description": "sweet yogurt drink", "Price (€)": "4.50"},
-      {"Name": "Salted Lassi", "Description": "salted yogurt drink", "Price (€)": "4.50"},
-      {"Name": "Nimbu Pani", "Description": "lemon water with herbs", "Price (€)": "3.90"},
-      {"Name": "Rooh Afza", "Description": "herbal rose drink", "Price (€)": "3.90"},
-      {"Name": "Pakola (0.33L)", "Description": "Pakistani soft drink", "Price (€)": "3.90"}
-    ]
-  },
-  {
-    "Category": "Open White Wine (Offener Weißwein)",
-    "Items": [
-      {"Name": "Weißburgunder (0.2L)", "Description": "Pinot Blanc", "Price (€)": "6.50"},
-      {"Name": "Chardonnay (0.2L)", "Description": "Chardonnay", "Price (€)": "6.50"},
-      {"Name": "Grauburgunder (0.2L)", "Description": "Pinot Gris", "Price (€)": "6.50"}
-    ]
-  },
+
   {
     "Category": "Cocktails – Longdrinks",
     "Items": [
-      {"Name": "Gin Tonic", "Description": "gin with tonic water", "Price (€)": "8.90"},
-      {"Name": "Vodka Lemon", "Description": "vodka with lemon soda", "Price (€)": "8.90"},
-      {"Name": "Vodka Orange", "Description": "vodka with orange juice", "Price (€)": "8.90"},
-      {"Name": "Cuba Libre", "Description": "rum with coke and lime", "Price (€)": "8.90"},
-      {"Name": "Whiskey Cola", "Description": "whiskey with cola", "Price (€)": "8.90"},
-      {"Name": "Campari Orange", "Description": "Campari with orange juice", "Price (€)": "8.90"},
-      {"Name": "Bacardi Cola", "Description": "Bacardi rum with cola", "Price (€)": "8.90"},
-      {"Name": "Malibu Orange", "Description": "Malibu rum with orange juice", "Price (€)": "8.90"},
-      {"Name": "Aperol Spritz", "Description": "Aperol with Prosecco and soda", "Price (€)": "8.90"},
-      {"Name": "Lillet Wild Berry", "Description": "Lillet with Wild Berry tonic", "Price (€)": "8.90"}
+      {"Name": "Smirnoff Vodka", "Description": " Lemon / Tonic", "Price (€)": "6.90"},
+      {"Name": "Campari 1 Orange / Soda / Maracuja", "Price (€)": "6.90"},
+      {"Name": "Vodka Orange", "Description": "vodka with orange juice", "Price (€)": "6.90"},
+      {"Name": "Cuba Libre", "Description": "Havana Club, Coca Cola, Limette", "Price (€)": "6.90"},
+      {"Name": "Jack Daniels ", "Description": " cola", "Price (€)": "6.90"},
+      {"Name": "Campari Orange", "Description": "Campari with orange juice", "Price (€)": "6.90"},
+      {"Name": "JimBeam", "Description": "cola GingerAle", "Price (€)": "8.90"},
+      {"Name": "Gordon ́s Dry Gin", "Description": "Lemon / Tonic", "Price (€)": "8.90"}
+      
     ]
   },
   {
     "Category": "Classic Cocktails",
     "Items": [
-      {"Name": "Pina Colada", "Description": "rum, coconut, pineapple", "Price (€)": "9.90"},
-      {"Name": "Caipirinha", "Description": "cachaça, lime, sugar", "Price (€)": "9.90"},
-      {"Name": "Mojito", "Description": "rum, lime, mint, soda", "Price (€)": "9.90"},
-      {"Name": "Tequila Sunrise", "Description": "tequila, orange juice, grenadine", "Price (€)": "9.90"},
-      {"Name": "Mai Tai", "Description": "rum, lime, almond syrup", "Price (€)": "9.90"}
+      {"Name": "Cosmopolitan ", "Description": "SmirnoffWodka,Cointreau, Lime Juice, Grenadine, Cranberry Juice", "Price (€)": "8.90"},
+      {"Name": "WhiteLady ", "Description": "Gordon ś DryGin, Grand Marnier, Zitronensaft, Zuckersirup", "Price (€)": "8.90"},
+      {"Name": "Mexicana ", "Description": "José Cuervo Tequila, Zitronensaft, Grenadine, Ananassaft", "Price (€)": "8.90"},
+      {"Name": "White Russian1", "Description": "Smirnoff Vodka, Kahlúa, Sahne", "Price (€)": "8.90"},
+      {"Name": "Mango Mojito1", "Description": "rum, lime, almond syrup", "Price (€)": "8.90"},
+      {"Name": "Erdbeer Mojito", "Description": "Bacardi, Limette, brauner Zucker, frische Minze, Soda und Erdbeersirup", "Price (€)": "8.90"},
+      {"Name": "Caipirinha", "Description": "Canario, brauner Zucker, Limette", "Price (€)": "8.90"},
+      {"Name": "FresaCaipirinha", "Description": "Canario, brauner Zucker, Limette, Erdbeeren", "Price (€)": "8.90"},
+      {"Name": "Mojito 1", "Description": "Bacardi, Limette, brauner Zucker, frische Minze, Soda", "Price (€)": "8.90"}
     ]
   },
   {
     "Category": "Margaritas",
     "Items": [
-      {"Name": "Classic Margarita", "Description": "tequila, lime juice, triple sec", "Price (€)": "9.90"},
-      {"Name": "Strawberry Margarita", "Description": "tequila, strawberry, lime, triple sec", "Price (€)": "9.90"},
-      {"Name": "Mango Margarita", "Description": "tequila, mango, lime, triple sec", "Price (€)": "9.90"}
+      {"Name": "Classic Margarita", "Description": "tequila, lime juice, triple sec", "Price (€)": "8.90"},
+      {"Name": "Margarita de Fresa 1", "Description": "José Cuervo Tequila Bols Triple Sec, Zitronensaft, Erdbeeren", "Price (€)": "8.90"},
+      {"Name": "Mango Margarita", "Description": "osé Cuervo Tequila Bols Triple Sec, Zitronensaft, Mango", "Price (€)": "8.90"},
+      {"Name": "Piña Colada1", "Description": "", "Price (€)": "8.90"},
+      {"Name": "Swimming Pool", "Description": "", "Price (€)": "8.90"},
+      {"Name": "Fresa Colada1", "Description": "", "Price (€)": "8.90"},
+      {"Name": "Mango Colada", "Description": "", "Price (€)": "8.90"}
+      
     ]
   },
   {
     "Category": "Sour Cocktails",
     "Items": [
-      {"Name": "Whiskey Sour", "Description": "whiskey, lemon, sugar", "Price (€)": "9.90"},
-      {"Name": "Amaretto Sour", "Description": "amaretto, lemon, sugar", "Price (€)": "9.90"}
+      {"Name": "Whiskey Sour", "Description": "whiskey, lemon, sugar", "Price (€)": "9.90"}
     ]
   },
   {
     "Category": "Sekt (Sparkling Wine)",
     "Items": [
-      {"Name": "Prosecco (0.1L)", "Description": "sparkling white wine", "Price (€)": "4.90"},
-      {"Name": "Prosecco Piccolo", "Description": "mini bottle", "Price (€)": "6.90"}
+      {"Name": "Hugo", "Description": "Sekt, Holundersirup, frische Minze und Soda", "Price (€)": "8.90"},
+      {"Name": "Aperol Spritz1", "Description": "Aperol, Sekt und Soda", "Price (€)": "8.90"}
     ]
   },
   {
     "Category": "Tequila & Vodka Cocktails",
     "Items": [
-      {"Name": "Tequila Sunrise", "Description": "tequila, OJ, grenadine", "Price (€)": "9.90"},
-      {"Name": "Vodka Lemon", "Description": "vodka, lemon soda", "Price (€)": "8.90"},
-      {"Name": "Moscow Mule", "Description": "vodka, ginger beer, lime", "Price (€)": "9.90"}
+      {"Name": "Tequila Sunrise", "Description": "", "Price (€)": "7.90"},
+      {"Name": "Watermelonman", "Description": "", "Price (€)": "8.90"},
+      {"Name": "Sex on the Beach A,1", "Description": "", "Price (€)": "8.90"},
+      {"Name": "MoscowMuleA,1", "Description": "", "Price (€)": "8.90"}
     ]
   },
   {
     "Category": "Power Cocktails",
     "Items": [
-      {"Name": "Long Island Iced Tea", "Description": "tequila, vodka, rum, gin, triple sec", "Price (€)": "10.90"},
-      {"Name": "Zombie", "Description": "dark rum, light rum, pineapple, apricot", "Price (€)": "10.90"},
-      {"Name": "Planter’s Punch", "Description": "rum, lime, grenadine", "Price (€)": "10.90"}
+      {"Name": "MaiTai1", "Description": "", "Price (€)": "9.90"},
+      {"Name": "Hurricane1", "Description": "", "Price (€)": "9.50"},
+      {"Name": "Zombie 1", "Description": " ", "Price (€)": "9.90"},
+      {"Name": "Long Island Ice Tea", "Description": " ", "Price (€)": "9.90"},
+      {"Name": "Planters Punch1", "Description": " ", "Price (€)": "8.90"},
+      {"Name": "Jamaica Fever 1", "Description": " ", "Price (€)": "8.90"},
+      {"Name": "Flamingo 1", "Description": " ", "Price (€)": "9.90"},
+      {"Name": "Mango Daiquiri 1,5", "Description": " ", "Price (€)": "7.90"},
+      {"Name": "Erdbeer Daiquiri1,5", "Description": " ", "Price (€)": "7.90"}
+
     ]
   },
   {
     "Category": "Alcohol-Free Cocktails (Alkoholfrei)",
     "Items": [
-      {"Name": "Virgin Colada", "Description": "coconut, pineapple", "Price (€)": "6.90"},
-      {"Name": "Ipanema", "Description": "lime, ginger ale, brown sugar, mint", "Price (€)": "6.90"},
-      {"Name": "Mango Cooler", "Description": "mango juice, lime, soda", "Price (€)": "6.90"},
-      {"Name": "Orange Fizz", "Description": "orange, lime, soda", "Price (€)": "6.90"},
-      {"Name": "Sweet Sunset", "Description": "exotic fruit mix, lemon, grenadine", "Price (€)": "6.90"}
+      {"Name": "Coconut Kiss", "Description": "Kokossirup, Sahne, Ananassaft", "Price (€)": "6.90"},
+      {"Name": "CaribeanKiss1", "Description": "Kokossirup, Sahne, Ananassaft, Kirschnektar", "Price (€)": "6.90"},
+      {"Name": "Fresa1", "Description": "pürierte Erdbeeren, Kokossirup, Sahne, Ananassaft", "Price (€)": "6.90"},
+      {"Name": "Mosquito3", "Description": "rische Minze, brauner Zucker, Limette, Soda, Tonic Water", "Price (€)": "6.90"},
+      {"Name": "Sportsman", "Description": "Zitronensaft, Lime Juice, Ananassaft, Orangensaft, Mango-Maracujanektar", "Price (€)": "6.90"}
     ]
   },
   {
     "Category": "Shots",
     "Items": [
-      {"Name": "Tequila", "Description": "with salt and lime", "Price (€)": "3.50"},
-      {"Name": "Sambuca", "Description": "with coffee bean", "Price (€)": "3.50"},
-      {"Name": "Jägermeister", "Description": "herbal liqueur", "Price (€)": "3.50"},
-      {"Name": "Ramazotti", "Description": "Italian herb liqueur", "Price (€)": "3.50"}
+      {"Name": "B51 1", "Description": "Kahlúa, Galliano, Baileys", "Price (€)": "6.50"},
+      {"Name": "B52 1", "Description": "Kahlúa, Baileys, Old Pascas 73%", "Price (€)": "6.50"},
+      {"Name": "Orgasmus 1", "Description": "Sambuca, Baileys 505 Havana Club 3 Jahre", "Price (€)": "6.50"}
+      
     ]
   },
   {
     "Category": "Spirits (Spirituosen)",
     "Items": [
-      {"Name": "Vodka", "Description": "classic vodka", "Price (€)": "3.90"},
-      {"Name": "Gin", "Description": "London Dry", "Price (€)": "3.90"},
-      {"Name": "Rum", "Description": "white or dark rum", "Price (€)": "3.90"},
-      {"Name": "Tequila", "Description": "gold or silver", "Price (€)": "3.90"},
-      {"Name": "Whisky", "Description": "Scotch, Bourbon, or Irish", "Price (€)": "3.90"},
-      {"Name": "Cognac", "Description": "French brandy", "Price (€)": "4.90"}
+      { "Name": "Havana Club", "Description": "3 Jahre", "Price (€)": "3.90" },
+      { "Name": "Sierra Silver", "Description": "", "Price (€)": "3.90" },
+      { "Name": "Jack Daniels", "Description": "Black Label", "Price (€)": "3.90" },
+      { "Name": "Johnnie Walker", "Description": "Red Label", "Price (€)": "3.90" },
+      { "Name": "Ballantines", "Description": "Scotch, Bourbon, or Irish", "Price (€)": "3.50" },
+      { "Name": "Smirnoff Vodka", "Description": "Red Label", "Price (€)": "3.50" },
+      { "Name": "Tequila", "Description": "with salt and lime", "Price (€)": "3.50" },
+      { "Name": "Sambuca", "Description": "with coffee bean", "Price (€)": "3.50" },
+      { "Name": "Jägermeister", "Description": "herbal liqueur", "Price (€)": "3.50" },
+      { "Name": "Ramazotti", "Description": "Italian herb liqueur", "Price (€)": "3.50" }
     ]
   }
-]
+]  

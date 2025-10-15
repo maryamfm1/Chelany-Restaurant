@@ -1,50 +1,73 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next"; // i18n hook
+import { useTranslation } from "react-i18next";
+import axios from "axios";
 
-const Reservation = () => {
-  const { t } = useTranslation(); // translation function
+function ReservationForm() {
+  const { t } = useTranslation();
 
-  // Step 1: Form state initialization
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    date: "",
-    time: "",
+  // Form data state
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    time: '',
     guests: 1,
+    message: '',
   });
 
-  const [submitted, setSubmitted] = useState(false); // track submission status
+  // Submission and error states
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
-  // Step 2: Input change handler
+  // Form field change handler
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Step 3: Form submit handler with validation
-  const handleSubmit = (e) => {
+  // Form submit handler
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Simple validation check
+    // Client-side validation
     if (
-      !form.name ||
-      !form.email ||
-      !form.phone ||
-      !form.date ||
-      !form.time ||
-      form.guests < 1
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.date ||
+      !formData.time ||
+      formData.guests < 1
     ) {
-      alert(t("reservation.error")); // translated error message
+      alert(t("reservation.error"));
       return;
     }
 
-    // TODO: Yahan apni API call ya email sending ka logic daalein
+    try {
+      // Prepare payload (backend expects 'guests' not 'people')
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        date: formData.date,
+        time: formData.time,
+        guests: formData.guests,
+        message: formData.message,
+      };
 
-    setSubmitted(true); // show confirmation message
+      // Make POST request to backend API
+      await axios.post(" https://api.chelanyrestaurant-berlin.de/api/reservations", payload);
+
+      // On success
+      setSubmitted(true);
+      setError(null);
+    } catch (err) {
+      console.error(err);
+      setError(t("reservation.apiError") || "Server error, try again.");
+    }
   };
 
-  // Today date for min attribute in date input
+  // Get today's date for min attribute in date input
   const today = new Date().toISOString().split("T")[0];
 
   return (
@@ -105,122 +128,145 @@ const Reservation = () => {
               boxShadow: "0 0 10px #a0d468",
             }}
           >
-            {/* Confirmation message with interpolated values */}
-            {t("reservation.confirmation", { name: form.name })}
+            {t("reservation.confirmation", { name: formData.name })}
             <br />
             {t("reservation.confirmationDetails", {
-              date: form.date,
-              time: form.time,
+              date: formData.date,
+              time: formData.time,
             })}
           </div>
         ) : (
-          <form onSubmit={handleSubmit} noValidate>
-            {/* Full Name */}
-            <div className="form-group mb-3">
-              <label htmlFor="name">{t("reservation.form.name")}</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder={t("reservation.form.placeholderName")}
-                required
-                className="form-control input-3d"
-              />
-            </div>
+          <>
+            {error && (
+              <div
+                style={{
+                  marginBottom: "1rem",
+                  color: "#ff6b6b",
+                  fontWeight: "600",
+                  textAlign: "center",
+                }}
+              >
+                {error}
+              </div>
+            )}
 
-            {/* Email */}
-            <div className="form-group mb-3">
-              <label htmlFor="email">{t("reservation.form.email")}</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder={t("reservation.form.placeholderEmail")}
-                required
-                className="form-control input-3d"
-              />
-            </div>
-
-            {/* Phone Number */}
-            <div className="form-group mb-3">
-              <label htmlFor="phone">{t("reservation.form.phone")}</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={form.phone}
-                onChange={handleChange}
-                placeholder={t("reservation.form.placeholderPhone")}
-                required
-                className="form-control input-3d"
-              />
-            </div>
-
-            {/* Date and Time inputs */}
-            <div className="form-row d-flex justify-content-between mb-3 gap-3 flex-wrap">
-              <div style={{ flex: "1 1 45%" }}>
-                <label htmlFor="date">{t("reservation.form.date")}</label>
+            <form onSubmit={handleSubmit} noValidate>
+              <div className="form-group mb-3">
+                <label htmlFor="name">{t("reservation.form.name")}</label>
                 <input
-                  type="date"
-                  id="date"
-                  name="date"
-                  value={form.date}
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
                   onChange={handleChange}
+                  placeholder={t("reservation.form.placeholderName")}
                   required
                   className="form-control input-3d"
-                  min={today}
                 />
               </div>
 
-              <div style={{ flex: "1 1 45%" }}>
-                <label htmlFor="time">{t("reservation.form.time")}</label>
+              <div className="form-group mb-3">
+                <label htmlFor="email">{t("reservation.form.email")}</label>
                 <input
-                  type="time"
-                  id="time"
-                  name="time"
-                  value={form.time}
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
                   onChange={handleChange}
+                  placeholder={t("reservation.form.placeholderEmail")}
                   required
                   className="form-control input-3d"
-                  min="11:00"
-                  max="23:00"
                 />
               </div>
-            </div>
 
-            {/* Guests */}
-            <div className="form-group mb-4" style={{ maxWidth: "150px" }}>
-              <label htmlFor="guests">{t("reservation.form.guests")}</label>
-              <input
-                type="number"
-                id="guests"
-                name="guests"
-                value={form.guests}
-                onChange={handleChange}
-                min="1"
-                max="20"
-                required
-                className="form-control input-3d"
-              />
-            </div>
+              <div className="form-group mb-3">
+                <label htmlFor="phone">{t("reservation.form.phone")}</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder={t("reservation.form.placeholderPhone")}
+                  required
+                  className="form-control input-3d"
+                />
+              </div>
 
-            {/* Submit button */}
-            <button
-              type="submit"
-              className="btn btn-danger btn-lg btn-3d w-100"
-              aria-label={t("reservation.form.bookNow")}
-            >
-              {t("reservation.form.bookNow")}
-            </button>
-          </form>
+              <div className="form-row d-flex justify-content-between mb-3 gap-3 flex-wrap">
+                <div style={{ flex: "1 1 45%" }}>
+                  <label htmlFor="date">{t("reservation.form.date")}</label>
+                  <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    value={formData.date}
+                    onChange={handleChange}
+                    required
+                    className="form-control input-3d"
+                    min={today}
+                  />
+                </div>
+
+                <div style={{ flex: "1 1 45%" }}>
+                  <label htmlFor="time">{t("reservation.form.time")}</label>
+                  <input
+  type="time"
+  id="time"
+  name="time"
+  value={formData.time}
+  onChange={handleChange}
+  required
+  className="form-control input-3d"
+  min="11:00"
+  max="23:00"
+  step="60" // ye line add karo
+/>
+
+                </div>
+              </div>
+
+              <div className="form-group mb-4" style={{ maxWidth: "150px" }}>
+                <label htmlFor="guests">{t("reservation.form.guests")}</label>
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  value={formData.guests}
+                  onChange={handleChange}
+                  min="1"
+                  max="20"
+                  required
+                  className="form-control input-3d"
+                />
+              </div>
+
+              <div className="form-group mb-4">
+                <label htmlFor="message">{t("reservation.form.message")}</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder={t("reservation.form.placeholderMessage")}
+                  className="form-control input-3d"
+                  rows={3}
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="btn btn-danger btn-lg btn-3d w-100"
+                aria-label={t("reservation.form.bookNow")}
+              >
+                {t("reservation.form.bookNow")}
+              </button>
+            </form>
+          </>
         )}
       </div>
     </div>
   );
-};
+}
 
-export default Reservation;
+export default ReservationForm;

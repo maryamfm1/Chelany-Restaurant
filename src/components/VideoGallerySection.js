@@ -15,9 +15,10 @@ const VideoGallerySection = () => {
       </div>
 
       {/* Image Gallery */}
+      {/* 
       <div className="image-gallery">
         <div className="gallery-image">
-          <img src="/images/bi.jpg" alt="Gallery 1" loading="lazy" />
+          <img src="/images/men.jpg" alt="Gallery 1" loading="lazy" />
         </div>
         <div className="gallery-image">
           <img src="/images/Gulab.jpeg" alt="Gallery 2" loading="lazy" />
@@ -28,7 +29,8 @@ const VideoGallerySection = () => {
         <div className="gallery-image">
           <img src="/images/baar.jpg" alt="Gallery 3" loading="lazy" />
         </div>
-      </div>
+      </div> 
+      */}
     </section>
   );
 };

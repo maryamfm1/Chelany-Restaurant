@@ -1,6 +1,7 @@
 import './i18n.js'; // ✅ language init at top
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js"; // ✅ PayPal SDK
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
 import Home from "./pages/Home.js";
@@ -10,9 +11,14 @@ import OrderOnline from "./pages/Order.js";
 import Menu from "./pages/Menu.js";
 import { CartProvider } from "./CartContext.js";
 import FloatingReservation from "./components/FloatingReservation.js";
-import AdminDashboard from './pages/admin/AdminDashboard.js';
 import AdminLogin from './pages/admin/AdminLogin.js';
-import AdminRegister from './pages/admin/AdminRegister.js';
+import  AdminDashboard from './pages/admin/AdminDashboard.js';
+import ProtectedRoute from "./components/ProtectedRoute.js";  
+import PrivacyPolicy from './components/PrivacyPolicy.js';
+
+
+
+ 
 
 // ✅ Wrapper component to use `useLocation`
 function AppContent() {
@@ -28,11 +34,17 @@ function AppContent() {
         <Route path="/reservation" element={<Reservation />} />
         <Route path="/order-online" element={<OrderOnline />} />
         <Route path="/menu" element={<Menu />} />
-
-        {/* ✅ Admin Routes */}
-        <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/admin/login" element={<AdminLogin />} />
-        <Route path="/admin/register" element={<AdminRegister />} />
+        <Route path="/login" element={<AdminLogin/>}/>
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        {/* Dashboard route ko ProtectedRoute mein wrap karo */}
+  <Route
+    path="/dashboard"
+    element={
+      <ProtectedRoute>
+        <AdminDashboard />
+      </ProtectedRoute>
+    }
+  />
       </Routes>
 
       {/* ✅ Only show on customer-side routes */}
@@ -46,10 +58,13 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <AppContent />
+        <PayPalScriptProvider options={{ "client-id": "AX7spZgthFeyQhErpRyL-axSAe18D0sVRVR3qhVRE1h9omZXjqdvKjUgeIG8UW36h-T_mbZhzSWx7W2Z" }}>
+          <AppContent />
+        </PayPalScriptProvider>
       </Router>
     </CartProvider>
   );
 }
 
 export default App;
+  

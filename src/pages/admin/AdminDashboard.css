@@ -5,6 +5,33 @@
   min-height: 80vh;
 }
 
+/* Header with title and logout button aligned */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logout button stylish */
+.logout-button {
+  background-color: #ff6b6b;  /* Slight red to match theme */
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 107, 107, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff4b4b;  /* Darker red on hover */
+  box-shadow: 0 6px 12px rgba(255, 75, 75, 0.6);
+}
+
+/* Cards and dropdown styling */
 .admin-sections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
